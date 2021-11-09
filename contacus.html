@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Pants</title>
+    <script>
+        function inputForm() {
+        let Pesan = document.getElementById('MyForm');
+        Pesan.addEventListener('click', () => alert('Pesan anda sudah terkirim'));       
+        }
+        function reset() {
+            document.getElementById("Reset").reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!--Search Top-->
+    <input type="text" style="width: 50%; height: 20px;" placeholder="Search..">
+    <a href="">
+    <button>Search</button>
+    </a>
+    <!---End Of search-->
+    <!--Header Navbar-->
+    <hr>
+    <nav>
+        <img src="Zackpants.png" style="height: 40px; width: 180px;" alt="">
+       | <a href="index.html">Home</a> |
+        <a href="tampilanshop.html">Shop</a> |
+        <a href="contacus.html">Contact Us</a> |
+        <a href="#">About Us</a> |
+        <a href="login.html">Register / Login</a> |
+        <a href="keranjang.html"><img src="keranjang.png" style="width: 30px; height: 30px;" alt=""></a>
+      </nav>
+      <hr>
+      <br><br><br>
+    </header>
+    
+    <form action="">
+        <h3>Contact Us</h3>
+        <p> Apa bila anda memiliki masalah
+        bisa <br> hubungi kami dengan isi form di bawah ini</p>
+        <label for="">Name :</label>
+        <input type="text" required>
+        <br><br>
+        <label for="">Email :</label>
+        <input type="email" required>
+        <br><br>
+        <label for="">Isi Pesan anda :</label><br><br>
+        <textarea name="" id="" cols="30" rows="10" required></textarea>
+        <br><br>
+        <label for="">Apa ada keluahan berikan bukti gambar atau video</label>
+        <br><br>
+        <input type="file"><br><br>
+        <input id="MyForm" onclick="inputForm()" type="Submit">
+        <input id="Reset" onclick="reset()" type="Reset">
+    </form>
+    <hr>
+    <footer>
+        <img src="Zackpants.png" style="width: 150px; height: 50px;" alt="">
+        
+        <article>
+            <h3>About Zack Pants</h3>
+            <P>
+                is simply dummy text of the printing and typesetting industry <br> 
+                Lorem Ipsum has been the industry's 
+                standard dummy <br> text ever since the 1500s,  
+                when an unknown printer took a <br> galley of type and scrambled it
+                to make a type specimen book.
+            </P>
+        </article>
+        <article>
+            <h3>Deals</h3>
+            <ul>
+                <li>Promo</li>
+                <li>Voucher</li>
+                <li>Event</li>
+                <li>Jeans</li>
+                <li>Pencil</li>
+                <li>Skinny</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Temukan Kami</h3>
+            <img src="tw.svg" alt="">
+            <img src="fb.svg" alt="">
+            <img src="ig.svg" alt="">
+        </article>
+        
+    </footer>
+</body>
+</html>

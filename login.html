@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Login</title>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myinput");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }        
+          function reset() {
+            document.getElementById("Reset").reset();
+        }
+      </script>
+    </head>
+    
+    <body>
+          <h1>Login</h1>
+            <br>
+              <form>
+                <label>Username</label>
+                <br>
+                <input type="text" required>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" value="" id="myinput" required>
+                <br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <br>
+                <button><a href="index.html"> log in</a></button>
+                <input id="Reset" onclick="reset()" type="Reset">
+                <br>
+                <a href="forgott.html">Lupa Password?</a>
+                <br>
+                <p> Atau Login Dengan</p>
+                <a href="facebook.html">facebook</a>&nbsp;| <a href="google.html">google</a>&nbsp;| <a href="twitter.html">twitter</a>
+                <p> Belum punya akun?
+                  <a href="register.html">Register di sini</a>
+                </p>
+              </form>
+    </body>
+</html>

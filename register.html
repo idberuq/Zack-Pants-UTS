@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Halaman Login</title>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myinput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }        
+        </script>
+    </head>
+
+    <body>
+          <h1>Register</h1>
+            <form>
+                <label for="">Nama</label>
+                <br>
+                <input type="text">
+                <br>
+                <label>Username</label>
+                <br>
+                <input type="text" required>
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="text" required>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" value="" id="myinput" required>
+                <br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <br><br>
+                <label for="">Tanggal Lahir</label> 
+                <br>
+                <input type = "date">
+                <br><br>
+                <label for="">Gender</label>
+                <br><br>
+                <input type="radio"> Pria
+                <br>
+                <input type="radio"> Wanita
+                <br>
+                <br>
+                <label for="">Agama :</label>
+                <select name="" id="">
+                  <option value="">Islam</option>
+                  <option value="">Kristen</option>
+                  <option value="">Hindu</option>
+                  <option value="">Budha</option>
+                  <option value="">Katolik</option>
+              </select>
+              <br><br>
+                <label for="File">Upload Foto Profile</label>
+                <input type="file" name="File" required>
+                <br> <br>
+                <label for="">Alamat :</label>
+                <br><br>
+                <textarea name="" id="" cols="30" rows="10">Isi alamat anda di sini</textarea>
+                <br><br><button>Register</button>
+                <p> Sudah punya akun?
+                  <a href="login.html">Login di sini</a>
+                </p>
+            </form>
+    </body>
+</html>

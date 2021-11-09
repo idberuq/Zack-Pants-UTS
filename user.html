@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Halaman Login</title>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myinput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }        
+        </script>
+    </head>
+
+    <body>
+      <header>
+        <nav>
+            <img src="Zackpants.png" style="height: 40px; width: 180px;" alt="">
+            |<a href="dasboard.html"><u>Dasboard </u></a>| 
+            |<a href="input barang.html">Input Barang</a>| 
+            |<a href="input kategori.html">Input Kategori</a>| 
+            |<a href="input jenis.html">Input Jenis</a>|
+            |<a href="#">User</a>|
+            |<a href="Acontact_us.html">Complaint / Contact Us</a>| 
+            |<a href="login.html">Logut</a>|
+            |<a href="index.html">Ke Hamalam Beranda --></a>|
+            <input type="text" style="width: 10%; height: 20px;" placeholder="Search..">
+            <a href="">
+            <button>Search</button>
+            </a>
+            <img src="Profil.png" style="height: 40px; width: 40px;" alt="">
+        </nav>
+        <hr>
+      </header>
+          <h1>Register</h1>
+            <form>
+                <label for="">Nama</label>
+                <br>
+                <input type="text">
+                <br>
+                <label>Username</label>
+                <br>
+                <input type="text" required>
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="text" required>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" value="" id="myinput" required>
+                <br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <br><br>
+                <label for="">Tanggal Lahir</label> 
+                <br>
+                <input type = "date">
+                <br><br>
+                <label for="">Gender</label>
+                <br><br>
+                <input type="radio"> Pria
+                <br>
+                <input type="radio"> Wanita
+                <br>
+                <br>
+                <label for="">Agama :</label>
+                <select name="" id="">
+                  <option value="">Islam</option>
+                  <option value="">Kristen</option>
+                  <option value="">Hindu</option>
+                  <option value="">Budha</option>
+                  <option value="">Katolik</option>
+              </select>
+              <br><br>
+              <label for="alamat">Alamat:</label><br>
+              <textarea name="alamat" cols="30" rows="5">Isikan alamat Anda di sini           
+              </textarea>
+              <br>
+              <br><br>
+                <label for="File">Upload Foto Profile</label>
+                <input type="file" name="File" required>
+                <br><br>
+                <button type="register" id="1register" onclick="Register1()">Register</button>
+                <p> Sudah punya akun?
+                  <a href="login.html">Login di sini</a>
+                </p>
+            </form>
+            <table border="1px"style="width: 30px;%">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Gender</th>
+                    <th>Agama</th>
+                    <th>Alamat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Adit Firmansyah</td>
+                    <td>adit00011</td>
+                    <td>aditfirmnsyah@gmail.com</td>
+                    <td>adit02211</td>
+                    <td>03-06-2002</td>
+                    <td>Pria</td>
+                    <td>Islam</td>
+                    <td>jln.suprapto</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Ririn Putri</td>
+                    <td>ririn00025</td>
+                    <td>ririnputri@gmail.com</td>
+                    <td>ririn32434</td>
+                    <td>07-07-2001</td>
+                    <td>Wanita</td>
+                    <td>Islam</td>
+                    <td>jln.ahmadyani</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Zainul Aziz</td>
+                    <td>Zainulaziz1234</td>
+                    <td>Zainul02@gmail.com</td>
+                    <td>Zainulaziz32434</td>
+                    <td>10-07-2001</td>
+                    <td>Pria</td>
+                    <td>Islam</td>
+                    <td>jln.Yos sudarso</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Adelia Sari</td>
+                    <td>Adelia00234</td>
+                    <td>adeliasari@gmail.com</td>
+                    <td>adelia12822</td>
+                    <td>015-09-2001</td>
+                    <td>Wanita</td>
+                    <td>Islam</td>
+                    <td>jln.JenderalSudirman</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Ahmad Desta</td>
+                    <td>Desta1254</td>
+                    <td>ahmaddesta@gmail.com</td>
+                    <td>Desta32434</td>
+                    <td>08-07-2001</td>
+                    <td>Pria</td>
+                    <td>Islam</td>
+                    <td>jln.Gatot Subroto</td>
+                </tr>
+                </tbody>
+    <script>
+      function Register1() {
+      let register= document.getElementById('1register');
+      register.addEventListener('click', () => alert('Sukses'));
+      }
+    </script>
+    </body>
+</html>

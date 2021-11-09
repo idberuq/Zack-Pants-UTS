@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboard</title>
+    <script>
+        function Hapus() {
+        let hapus = document.getElementById('hapus');
+        hapus.addEventListener('click', () => alert('Berhasil'));
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Zackpants.png" style="height: 40px; width: 180px;" alt="">
+            |<a href="dasboard.html"><u>Dasboard </u></a>| 
+            |<a href="input barang.html">Input Barang</a>| 
+            |<a href="input kategori.html">Input Kategori</a>| 
+            |<a href="input jenis.html">Input Jenis</a>|
+            |<a href="#">User</a>|
+            |<a href="Acontact_us.html">Complaint / Contact Us</a>| 
+            |<a href="login.html">Logut</a>|
+            |<a href="index.html">Ke Hamalam Beranda --></a>|
+            <input type="text" style="width: 10%; height: 20px;" placeholder="Search..">
+            <a href="">
+            <button>Search</button>
+            </a>
+            <img src="Profil.png" style="height: 40px; width: 40px;" alt="">
+        </nav>
+        <hr>
+    </header>
+    <p>User | 1000</p>
+    <button>Tambah/Edit</button>
+    <p>Barang | 10000</p>
+    <button>Tambah/Edit</button>
+    <p>Kotak Complaint / Contact Us | 00</p>
+    <button>Lihat Detail</button>
+    <br><br>
+    <table border="1" cellspacing="0" cellpadding="2">
+        <thead>
+            <tr>
+                <th>Id Barang</th>
+                <th>Gambar</th>
+                <th>Nama Barang</th>
+                <th>Harga</th>
+                <th>Kategori</th>
+                <th>Jenis</th>
+                <th>Stock</th>
+                <th><input type="text" value="Cari Di Sini..."></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td><img src="celana putih.jpeg" style="width: 50px; height: 50px;" alt=""></td>
+                <td>Celana panjang</td>
+                <td>100.000</td>
+                <td>Jeans</td>
+                <td>levis</td>
+                <td>100</td>
+                <td><button>Edit</button> <button id="hapus" onclick="Hapus()">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><img src="celana putih.jpeg" style="width: 50px; height: 50px;" alt=""></td>
+                <td>Celanan pendek</td>
+                <td>100.000</td>
+                <td>Jeans</td>
+                <td>levis</td>
+                <td>100</td>
+                <td><button>Edit</button> <button id="hapus" onclick="Hapus()">Hapus</button></td>
+                
+            </tr>
+            <tr>
+                <td>03</td>
+                <td><img src="celana putih.jpeg" style="width: 50px; height: 50px;" alt=""></td>
+                <td>Celana lari</td>
+                <td>100.000</td>
+                <td>Jeans</td>
+                <td>levis</td>
+                <td>100</td>
+                <td><button>Edit</button> <button id="hapus" onclick="Hapus()">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td><img src="celana putih.jpeg" style="width: 50px; height: 50px;" alt=""></td>
+                <td>Celana Jogger</td>
+                <td>100.000</td>
+                <td>Jogger</td>
+                <td>Jogger</td>
+                <td>100</td>
+                <td><button>Edit</button> <button id="hapus" onclick="Hapus()">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td><img src="celana putih.jpeg" style="width: 50px; height: 50px;" alt=""></td>
+                <td>Sabun Mandi</td>
+                <td>100.000</td>
+                <td>Jeans</td>
+                <td>levis</td>
+                <td>Habis</td>
+                <td><button>Edit</button> <button id="hapus" onclick="Hapus()">Hapus</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

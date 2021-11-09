@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Kategori</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <img src="Zackpants.png" style="height: 40px; width: 180px;" alt="">
+        |<a href="dasboard.html"><u>Dasboard </u></a>| 
+        |<a href="input barang.html">Input Barang</a>| 
+        |<a href="input kategori.html">Input Kategori</a>| 
+        |<a href="input jenis.html">Input Jenis</a>|
+        |<a href="#">User</a>|
+        |<a href="Acontact_us.html">Complaint / Contact Us</a>| 
+        |<a href="login.html">Logut</a>|
+        |<a href="index.html">Ke Hamalam Beranda --></a>|
+        <input type="text" style="width: 10%; height: 20px;" placeholder="Search..">
+        <a href="">
+        <button>Search</button>
+        </a>
+        <img src="Profil.png" style="height: 40px; width: 40px;" alt="">
+    </nav>
+    <hr>
+</header>
+    <form>   
+        <label for="fname">Input Kategori:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="reset" name="Reset">
+        <button type="submit" id="1Submit" onclick="Submit1()">submit</button>
+    </form>
+    <br><br>
+    <table border="2px"style="width: 20px;%">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kategori</th>
+            <th> <input type="text" name="" value="Cari disini..." required></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Celana Panjang</td>
+            <td><button>Edit</button>
+            <button type="hapus" id="1hapus" onclick="Hapus1()">Hapus</button></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Celana Panjang dan Pendek</td>
+            <td><button>Edit</button>
+            <button type="hapus" id="2hapus" onclick="Hapus2()">Hapus</button></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Celana Panjang</td>
+            <td><button>Edit</button>
+            <button type="hapus" id="3hapus" onclick="Hapus3()">Hapus</button></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Celana Panjang </td>
+            <td><button>Edit</button>
+            <button type="hapus" id="4hapus" onclick="Hapus4()">Hapus</button></td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Celana Panjang</td>
+            <td><button>Edit</button>
+            <button type="hapus" id="5hapus" onclick="Hapus5()">Hapus</button></td>
+          </tr>
+        </tbody>
+<script>
+function Submit1() {
+let submit = document.getElementById('1Submit');
+submit.addEventListener('click', () => alert('Sukses'));
+}
+function Hapus1() {
+  let hapus = document.getElementById('1hapus');
+  hapus.addEventListener('click', () => alert('Berhasil'));
+  }
+  function Hapus2() {
+  let hapus = document.getElementById('2hapus');
+  hapus.addEventListener('click', () => alert('Berhasil'));
+  }
+  function Hapus3() {
+  let hapus = document.getElementById('3hapus');
+  hapus.addEventListener('click', () => alert('Berhasil'));
+  }
+  function Hapus4() {
+  let hapus = document.getElementById('4hapus');
+  hapus.addEventListener('click', () => alert('Berhasil'));
+  }
+  function Hapus5() {
+  let hapus = document.getElementById('5hapus');
+  hapus.addEventListener('click', () => alert('Berhasil'));
+  }
+</script>
+</body>
+</html>
+    
+</body>
+</html>
